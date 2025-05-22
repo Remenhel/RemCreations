@@ -102,19 +102,3 @@ fetch(apiEndpoint, {
     });
 
 document.getElementById("contact").scrollIntoView();
-
-//bgm
-function toggleMusic() {
-  if (bgMusic.paused) {
-    bgMusic.play()
-      .then(() => {
-        musicBtn.textContent = '⏸';
-      })
-      .catch((e) => {
-        console.error('Audio playback failed:', e);
-      });
-  } else {
-    bgMusic.pause();
-    musicBtn.textContent = '⏵';
-  }
-}
