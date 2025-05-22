@@ -104,18 +104,17 @@ fetch(apiEndpoint, {
 document.getElementById("contact").scrollIntoView();
 
 //bgm
-const bgMusic = document.getElementById('bgMusic');
-    const musicBtn = document.getElementById('musicBtn');
-
-    function toggleMusic() {
-      if (bgMusic.paused) {
-        bgMusic.play();
+function toggleMusic() {
+  if (bgMusic.paused) {
+    bgMusic.play()
+      .then(() => {
         musicBtn.textContent = '⏸';
-      }
-      else {
-        bgMusic.pause();
-        musicBtn.textContent = '⏵';
-      }
-    }
-
-    musicBtn.addEventListener('click', toggleMusic);
+      })
+      .catch((e) => {
+        console.error('Audio playback failed:', e);
+      });
+  } else {
+    bgMusic.pause();
+    musicBtn.textContent = '⏵';
+  }
+}
