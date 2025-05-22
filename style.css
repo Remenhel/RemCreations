@@ -19,7 +19,6 @@ body {
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url('images/Group.png') no-repeat center center fixed;
   background-size: cover;
 }
-
 /*loading screen*/
 #loader {
   position: fixed;
@@ -96,20 +95,16 @@ header {
   font-size: 1.5rem;
   cursor: pointer;
   margin-left: -50px;
+  color: black;
 }
 
 .theme-toggle {
   background: none;
   border: none;
   border-radius: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
-  color: var(--highlight);
-}
-.theme-toggle:hover {
-  background: #1565c0;
-  border-radius: 20px;
-  transition: .3s ease;
+  color: var(--highlight-dark);
 }
 /*Dark mode*/
 
@@ -149,11 +144,12 @@ header {
 }
 
 .dark-mode .burger {
-  color: #4ea1ff;
+  color: white;
 }
 
 .dark-mode .theme-toggle {
-  color: #4ea1ff;
+  font-size: 2rem;
+  color: var(--highlight-light);
 }
 
 /* Sections */
