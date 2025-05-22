@@ -20,33 +20,6 @@ body {
   background-size: cover;
 }
 
-/*bgm*/
-.music-button {
-      background-color: #42a5f5;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      font-size: 24px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 30px;
-      transition: background-color 0.3s, transform 0.2s;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
-
-    .music-button:hover {
-      background-color: #1e88e5;
-      transform: scale(1.05);
-    }
-
-    .music-button:active {
-      transform: scale(0.95);
-    }
-
 /*loading screen*/
 #loader {
   position: fixed;
