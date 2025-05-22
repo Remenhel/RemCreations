@@ -10,7 +10,7 @@ burger.addEventListener('click', () => {
 // Toggle light/dark mode
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
-  themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀︎' : '❨';
+  themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
 // Hide loader when page fully loads
