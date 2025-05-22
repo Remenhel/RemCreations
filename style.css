@@ -326,6 +326,7 @@ a {
 }
 
 .text-blk.headingText {
+  color: black;
   font-size: 22px;
   font-weight: 700;
   line-height: 30px;
